@@ -61,12 +61,12 @@ export default function App() {
 
       <NavbarContent className="hidden sm:flex gap-8" justify="start">
         <NavbarBrand>
-          <img
+          {/* <img
             src="https://png.pngtree.com/png-clipart/20231129/ourmid/pngtree-3d-red-blood-drop-png-image_10759934.png"
             alt="Blood Donation Logo"
             width="50"
             height="50"
-          />
+          /> */}
           <p className="font-bold mr-24  text-red-800 hover:text-red-500 cursor-pointer transition-all duration-300">
             Blood Donate
           </p>

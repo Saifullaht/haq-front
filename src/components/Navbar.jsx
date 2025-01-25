@@ -30,23 +30,23 @@ export default function App() {
     } else {
       setUser(null); // Set user to null if no token is found
     }
-  }, [setUser]);
+  }, []);
 
-  const handleLogout = () => {
-    localStorage.removeItem("token");
-    localStorage.removeItem("user");
-    setUser(null);
-    navigate("/login");
-  };
+  // const handleLogout = () => {
+  //   localStorage.removeItem("token");
+  //   localStorage.removeItem("user");
+  //   setUser(null);
+  //   navigate("/login");
+  // };
 
-  const handleProtectedAccess = (url) => {
-    if (!user) {
-      message.warning("You need to log in to access this page.");
-      navigate("/login"); // Redirect to login if user is not logged in
-    } else {
-      navigate(url); // Otherwise, navigate to the requested page
-    }
-  };
+  // const handleProtectedAccess = (url) => {
+  //   if (!user) {
+  //     message.warning("You need to log in to access this page.");
+  //     navigate("/login"); // Redirect to login if user is not logged in
+  //   } else {
+  //     navigate(url); // Otherwise, navigate to the requested page
+  //   }
+  // };
 
   return (
     <Navbar
